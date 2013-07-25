@@ -23,7 +23,10 @@ function LoadScripts() {
 
 function addToGameList(gameInfo) {
     var element = $("<tr class='gameInfo'><td>" + gameInfo.opponent + "</td><td>" + gameInfo.date+"</td></tr>")
+    var gameId = "" + gameInfo.opponent + "_" + gameInfo.date.replace(/\//g,'')
+    element.attr('id',gameId)
     element.data('gameInfo', gameInfo)
+    element.data('gameInfo').gameId = gameId
     console.log(element.data('gameInfo'))
     $("#gamelist").append(element)
     element.on("click", displaySeating) 
@@ -122,6 +125,8 @@ function rebuildCalculator() {
 function addToCalculator(selection) {
   var data = selection.game
   var price = selection.price
+
+  $("#" + selection.game.gameId).css('background-color', 'red')
   selections.push({data: selection.game, price: selection.price})
   console.log("Adding to calc: ", selections)
 
