@@ -1,41 +1,40 @@
 
 var numGames = 5;
-var selections = []
+var selections = [];
 
 function LoadScripts() {
 
-    $("#pkg-selection").buttonset()
+    $("#pkg-selection").buttonset();
 
     $("#pkg-selection input[type=radio]").on('change', function() {
-        numGames = this.value
-        selections = []
-        $('#selections').children().remove()
-        $('#totalvalue').text('$0.00')
-        console.log("numGames is now " + numGames);
-    console.log("gameData is" + gameData.games);
-    })
+        numGames = this.value;
+        selections = [];
+        $('#selections').children().remove();
+        $('#totalvalue').text('$0.00');
+        $('.gameInfo').each(function(i,elem) {
+          $(elem).data('gameInfo').selectedSeat = null
+        })
+    });
 
     for (var i = 0; i < gameData.games.length; i++) {
-        addToGameList(gameData.games[i])
+        addToGameList(gameData.games[i]);
     }
 }
 
 function addToGameList(gameInfo) {
-    var element = $("<tr><td>" + gameInfo.opponent + "</td><td>" + gameInfo.date+"</td></tr>")
+    var element = $("<tr class='gameInfo'><td>" + gameInfo.opponent + "</td><td>" + gameInfo.date+"</td></tr>")
     element.data('gameInfo', gameInfo)
     console.log(element.data('gameInfo'))
     $("#gamelist").append(element)
-    element.on("click", function() {
-        if (selections.length < numGames) {
-        displaySeating(this)
-        }
-        else {
-            alert("You have already selected " + selections.length + " games with a " + numGames + " game package.")
-        }
-    })
+    element.on("click", displaySeating) 
 }
 
-function displaySeating(gameClicked) {
+function displaySeating() {
+    if (selections.length >= numGames) {
+        alert("You have already selected " + selections.length + " games with a " + numGames + " game package.")
+        return
+    }
+    gameClicked = this
     var game = $(gameClicked)
     console.log("Clicked: "+ game+ " - Data: " + game.data("gameInfo"));
     var gameLevel = game.data("gameInfo").gameType
@@ -44,10 +43,29 @@ function displaySeating(gameClicked) {
     seatingList.find('td').attr('colspan', 4)
     var insertAt  = seatingList.find("tbody")
 
-    for (key in  gameData.plans[numGames]) {
-        console.log(insertAt)
-        console.log(key)
-        var sectionInfo = $("<tr><td>"+key+"</td><td>$" +gameData.plans[numGames][key][gameLevel] + "</td></tr>")
+    var mkAddToCalcCB = function(key, price) {
+      return function() {
+        var selectionData = {}
+        selectionData.game = game.data('gameInfo')
+        selectionData.gameElement = gameClicked
+        selectionData.price = price
+        selectionData.sectionsList = seatingList
+
+        if (selectionData.game.selectedSeat) {
+          for (var i = 0; i < selections.length; i++ ) {
+            if (selectionData.game == selections[i].data) {
+              selections.splice(i,1)
+            }
+          }
+        } 
+
+        selectionData.game.selectedSeat = key.slice(0)
+        addToCalculator(selectionData)
+      }
+    }
+
+    for (var key in gameData.plans[numGames]) {
+        var sectionInfo = $("<tr class='sectionInfo'><td>"+key+"</td><td>$" +gameData.plans[numGames][key][gameLevel] + "</td></tr>")
 
         console.log("selected:", game.data('gameInfo').selectedSeat )
         if (game.data('gameInfo').selectedSeat == key) {
@@ -57,57 +75,39 @@ function displaySeating(gameClicked) {
         sectionInfo.data('gameInfo',game.data("gameInfo"))
         sectionInfo.data("price", gameData.plans[numGames][key][gameLevel] )
         insertAt.append(sectionInfo)
-        var func = function() {
-            var seatType = key.slice(0)
-            addToCalculator(this)
-            game.data('gameInfo').selectedSeat = seatType
-            console.log(game.data('gameInfo'))
-            // console.log('selection event:', seatType)
-        }
-        sectionInfo.on("click", func)
+        sectionInfo.on("click", mkAddToCalcCB(key,sectionInfo.data('price')))
     }
 
     game.after(seatingList)
-    // game.off('click')
+    game.off('click')
+    game.on('click', function() {
+      seatingList.remove()
+      game.on('click', displaySeating)
+    })
 }
 
-function addToCalculator(section) {
-  var sectionInfo = $(section)
-  var data = sectionInfo.data('gameInfo')
-  var price = sectionInfo.data('price')
-  selections.push({data: data, price: price})
+function rebuildCalculator() {
+
+  selections.sort(function(a,b) {
+    return a.data.date < b.data.date
+  })
 
   var container = $("#selections")
-  if (container.children().length === 0)  {
-    container.append("<div class='selection'>" +
-                     "<span class='date'>" + data.date + "</span>" +
-                     "<span class='desc'>" + data.opponent + "</span>" +
-                     "<span class='cost'>$" + price + "</span>" +
-                     "</div>")
-  }
-  else {
-    inserted = false
-    container.each(function(index,elem) {
-      if ($(elem).find("span.date").text() > data.date) {
-        container.before("<div class='selection'>" +
-                     "<span class='date'>" + data.date + "</span>" +
-                     "<span class='desc'>" + data.opponent + "</span>" +
-                     "<span class='cost'>$" + price+ "</span>" +
-                     "</div>")
-        inserted = true
-        return false;
-      }
+  container.fadeOut(100, function() {
+    container.children().remove()
 
-    })
-    if (!inserted) {
-        container.append("<div class='selection'>" +
-                     "<span class='date'>" + data.date + "</span>" +
-                     "<span class='desc'>" + data.opponent + "</span>" +
-                     "<span class='cost'>$" + price+ "</span>" +
-                     "</div>")
+    for (var i = 0; i < selections.length; i++) {
+      var selection = selections[i]
+      var entry = $("<li class='selection'>" + 
+                       "<span class='date'>" + selection.data.date + "</span>" +
+                       "<span class='desc'>" + selection.data.opponent + "</span>" +
+                       "<span class='seat'>" + selection.data.selectedSeat+ "</span>" +
+                       "<span class='cost'>$" + selection.price + "</span>" +
+                       "</li>")
+      container.append(entry)
     }
-
-  }
+    container.fadeIn(100)
+  })
 
   $("#totalvalue").text(function(index, text) {
     var newVal = 0.0
@@ -117,14 +117,18 @@ function addToCalculator(section) {
     return "$" + newVal.toFixed(2)
   })
 
-  sectionInfo.parents("tr.sectionList").remove()
 }
 
+function addToCalculator(selection) {
+  var data = selection.game
+  var price = selection.price
+  selections.push({data: selection.game, price: selection.price})
+  console.log("Adding to calc: ", selections)
 
-$("#gamelist tr").on('click', function() {
-  var date = $(this).find("td.date").text()
-  var desc = $(this).find("td.game").text()
-  var price= $(this).find("td.price").text()
+  rebuildCalculator()
 
+  selection.sectionsList.remove()
 
-})
+  $(selection.gameElement).on("click", displaySeating)
+}
+
