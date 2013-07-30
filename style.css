@@ -1,8 +1,8 @@
 .calculator {
-    float: right;
+   
     border: 2px solid red;
     padding: 5px 5px 3px 3px;
-    margin: 0 200px 0 200px;
+    margin: 0 0 0 200px;
 }
 
 .total span {
