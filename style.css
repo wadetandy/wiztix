@@ -18,3 +18,9 @@
     width: 40em;
 }
 
+.VIPBox {
+    height:14px; 
+    background:#9900FF; 
+    display:block;
+}
+
