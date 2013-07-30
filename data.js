@@ -33,7 +33,7 @@ var gameData = {
     ],
     "plans": {
         "5": {
-            "<div style="width:200px; height:14px; background:#808282; display:block;"></div>": {
+            "VIPBox": {
                 "red": 150,
                 "white": 157,
                 "blue": 171,
