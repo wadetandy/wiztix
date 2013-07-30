@@ -436,9 +436,5 @@ var gameData = {
             "color": "ae32e4"
         },
     }
-    var gameData = {
-  sectionColors: {
-     "VIPBox": "#038323"
-  },
-    }
+
 }
