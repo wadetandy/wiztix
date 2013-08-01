@@ -41,7 +41,7 @@ function displaySeating() {
     console.log("Clicked: "+ game+ " - Data: " + game.data("gameInfo"));
     var gameLevel = game.data("gameInfo").gameType
 
-    var seatingList = $("<tr class='sectionList'><td><table><thead><th>Section</th><th>Price</th><th>Info</th></thead><tbody></tbody></table></td></tr>")
+    var seatingList = $("<tr class='sectionList'><td><table><thead><th>Section</th><th>Price</th></thead><tbody></tbody></table></td></tr>")
     seatingList.find('td').attr('colspan', 4)
     var insertAt  = seatingList.find("tbody")
 
@@ -69,8 +69,7 @@ function displaySeating() {
    
 
     for (var key in gameData.plans[numGames]) {
-        var sectionInfo = $("<tr class='sectionInfo'><td>"+key+"</td><td>$" +gameData.plans[numGames][key][gameLevel] + "</td><td style='background-color: #" + javascriptVarForColor + "; width:
-100px;'></td></tr>")
+        var sectionInfo = $("<tr class='sectionInfo'><td>"+key+"</td><td>$" +gameData.plans[numGames][key][gameLevel] + "</td></tr>")
 
         console.log("selected:", game.data('gameInfo').selectedSeat )
         if (game.data('gameInfo').selectedSeat == key) {
