@@ -11,6 +11,7 @@ function LoadScripts() {
         $('#selections').children().remove();
         $('#totalvalue').text('$0.00');
         $('.gameInfo').each(function(i,elem) {
+          $(elem).css('background-color',"")
           $(elem).data('gameInfo').selectedSeat = null
         })
     });
@@ -78,7 +79,9 @@ function displaySeating() {
 
         sectionInfo.data('gameInfo',game.data("gameInfo"))
         sectionInfo.data("price", gameData.plans[numGames][key][gameLevel] )
-        sectionInfo.css('background-color': gameData.sections[key].color) )
+        if (gameData.sections[key]) {
+          sectionInfo.css('background-color', gameData.sections[key].color)
+        }
         insertAt.append(sectionInfo)
         sectionInfo.on("click", mkAddToCalcCB(key,sectionInfo.data('price')))
     }
