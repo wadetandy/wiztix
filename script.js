@@ -112,6 +112,30 @@ function rebuildCalculator() {
                        "<span class='seat'>" + selection.data.selectedSeat+ "</span>" +
                        "<span class='cost'>$" + selection.price + "</span>" +
                        "</li>")
+
+      var mkRemoveFunction = function(sdata) {
+        var selectionData = sdata
+        return function() {
+          for (var i = 0; i < selections.length; i++ ) {
+            if (selectionData == selections[i].data) {
+                selections.splice(i,1)
+            }
+          }
+        rebuildCalculator()
+            $("#" + selectionData.gameId).css('background-color',"")
+            selectionData.selectedSeat=null
+
+        }
+      }
+
+      entry.on('click', mkRemoveFunction(selection.data)
+
+
+
+        )
+
+
+
       container.append(entry)
     }
     container.fadeIn(100)
