@@ -139,11 +139,4 @@ function addToCalculator(selection) {
   $(selection.gameElement).on("click", displaySeating)
 }
 
-    $('#table').datagrid({  
-        rowStyler:function(index,row){  
-            if (row.section=VIPBox){  
-                return 'background-color:red;';  
-            }  
-        }  
-    });  
 
