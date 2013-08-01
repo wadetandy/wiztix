@@ -427,13 +427,13 @@ var gameData = {
     },
     "sections": {
         "VIPBox": {
-            "color": "a5fe12"
+            "color": "#a5fe12"
         },     
         "CourtsideCtrH_T": {
-            "color": "464646"
+            "color": "#464646"
         },
         "CourtsideEndH_T": {
-            "color": "ae32e4"
+            "color": "#ae32e4"
         },
     }
 
