@@ -79,7 +79,6 @@ function displaySeating() {
         sectionInfo.data('gameInfo',game.data("gameInfo"))
         sectionInfo.data("price", gameData.plans[numGames][key][gameLevel] )
         sectionInfo.css('background-color': gameData.sections[key].color) )
-        sectionInfo.VIPBox.css('background-color', 'red') )
         insertAt.append(sectionInfo)
         sectionInfo.on("click", mkAddToCalcCB(key,sectionInfo.data('price')))
     }
@@ -139,4 +138,12 @@ function addToCalculator(selection) {
 
   $(selection.gameElement).on("click", displaySeating)
 }
+
+    $('#table').datagrid({  
+        rowStyler:function(index,row){  
+            if (row.section=VIPBox){  
+                return 'background-color:red;';  
+            }  
+        }  
+    });  
 
