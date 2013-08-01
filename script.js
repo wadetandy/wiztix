@@ -1,4 +1,3 @@
-
 var numGames = 5;
 var selections = [];
 
@@ -12,6 +11,7 @@ function LoadScripts() {
         $('#selections').children().remove();
         $('#totalvalue').text('$0.00');
         $('.gameInfo').each(function(i,elem) {
+          $(elem).css('background-color',"")
           $(elem).data('gameInfo').selectedSeat = null
         })
     });
@@ -66,6 +66,8 @@ function displaySeating() {
         addToCalculator(selectionData)
       }
     }
+    
+   
 
     for (var key in gameData.plans[numGames]) {
         var sectionInfo = $("<tr class='sectionInfo'><td>"+key+"</td><td>$" +gameData.plans[numGames][key][gameLevel] + "</td></tr>")
@@ -77,6 +79,9 @@ function displaySeating() {
 
         sectionInfo.data('gameInfo',game.data("gameInfo"))
         sectionInfo.data("price", gameData.plans[numGames][key][gameLevel] )
+        if (gameData.sections[key]) {
+          sectionInfo.css('background-color', gameData.sections[key].color)
+        }
         insertAt.append(sectionInfo)
         sectionInfo.on("click", mkAddToCalcCB(key,sectionInfo.data('price')))
     }
@@ -136,4 +141,5 @@ function addToCalculator(selection) {
 
   $(selection.gameElement).on("click", displaySeating)
 }
+
 

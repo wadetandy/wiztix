@@ -424,5 +424,17 @@ var gameData = {
 
             }
         }
+    },
+    "sections": {
+        "VIPBox": {
+            "color": "#a5fe12"
+        },     
+        "CourtsideCtrH_T": {
+            "color": "#464646"
+        },
+        "CourtsideEndH_T": {
+            "color": "#ae32e4"
+        },
     }
+
 }
