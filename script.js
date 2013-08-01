@@ -69,7 +69,8 @@ function displaySeating() {
    
 
     for (var key in gameData.plans[numGames]) {
-        var sectionInfo = $("<tr class='sectionInfo'><td>"+key+"</td><td>$" +gameData.plans[numGames][key][gameLevel] + "</td></tr>")
+        var sectionInfo = $("<tr class='sectionInfo'><td>"+key+"</td><td>$" +gameData.plans[numGames][key][gameLevel] + "</td><td style='background-color: #" + javascriptVarForColor + "; width:
+100px;'></td></tr>")
 
         console.log("selected:", game.data('gameInfo').selectedSeat )
         if (game.data('gameInfo').selectedSeat == key) {
