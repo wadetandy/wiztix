@@ -1,33 +1,208 @@
 var gameData = {
     "games": [
         {
-            "opponent": "Celtics",
-            "date": "02/02/2013",
+            "opponent": "76ers",
+            "date": "11/01/2013",
+            "gameType": "white"
+        },
+        {
+            "opponent": "Nets",
+            "date": "11/08/2013",
+            "gameType": "blue"
+        },
+        {
+            "opponent": "Cavaliers",
+            "date": "11/16/2013",
+            "gameType": "white"
+        },
+        {
+            "opponent": "Timberwolves",
+            "date": "11/19/2013",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Knicks",
+            "date": "11/23/2013",
             "gameType": "gold"
         },
         {
-            "opponent": "Heat",
-            "date": "02/04/2013",
+            "opponent": "Lakers",
+            "date": "11/26/2013",
+            "gameType": "blue"
+        },
+        {
+            "opponent": "Hawks",
+            "date": "11/30/2013",
             "gameType": "white"
         },
         {
             "opponent": "Magic",
-            "date": "02/06/2013",
+            "date": "12/02/2013",
             "gameType": "red"
         },
         {
+            "opponent": "Bucks",
+            "date": "12/06/2013",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Nuggets",
+            "date": "12/09/2013",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Clippers",
+            "date": "12/14/2013",
+            "gameType": "gold"
+        },
+        {
+            "opponent": "Pistons",
+            "date": "12/28/2013",
+            "gameType": "white"
+        },
+        {
+            "opponent": "Mavericks",
+            "date": "1/01/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Raptors",
+            "date": "1/03/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Warriors",
+            "date": "1/05/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Rockets",
+            "date": "1/11/2014",
+            "gameType": "platinum"
+        },
+        {
+            "opponent": "Heat",
+            "date": "1/15/2014",
+            "gameType": "platinum"
+        },
+        {
+            "opponent": "Bulls",
+            "date": "1/17/2014",
+            "gameType": "gold"
+        },
+        {
+            "opponent": "Pistons",
+            "date": "1/18/2014",
+            "gameType": "white"
+        },
+        {
+            "opponent": "76ers",
+            "date": "1/20/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Celtics",
+            "date": "1/22/2014",
+            "gameType": "white"
+        },
+        {
             "opponent": "Thunder",
-            "date": "02/02/2013",
+            "date": "2/01/2014",
+            "gameType": "platinum"
+        },
+        {
+            "opponent": "Trail Blazers",
+            "date": "2/03/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Spurs",
+            "date": "2/05/2014",
             "gameType": "blue"
         },
         {
-            "opponent": "Hornets",
-            "date": "02/09/2013",
-            "gameType": "silver"
+            "opponent": "Cavaliers",
+            "date": "2/07/2014",
+            "gameType": "white"
+        },
+        {
+            "opponent": "Kings",
+            "date": "2/09/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Raptors",
+            "date": "2/18/2014",
+            "gameType": "red"
         },
         {
             "opponent": "Pelicans",
-            "date": "02/10/2013",
+            "date": "2/22/2014",
+            "gameType": "white"
+        },
+        {
+            "opponent": "Magic",
+            "date": "2/25/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Grizzlies",
+            "date": "3/03/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Jazz",
+            "date": "3/05/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Bobcats",
+            "date": "3/12/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Nets",
+            "date": "3/15/2014",
+            "gameType": "platinum"
+        },
+        {
+            "opponent": "Suns",
+            "date": "3/26/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Pacers",
+            "date": "3/28/2014",
+            "gameType": "blue"
+        },
+        {
+            "opponent": "Hawks",
+            "date": "3/29/2014",
+            "gameType": "blue"
+        },
+        {
+            "opponent": "Celtics",
+            "date": "4/02/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Bulls",
+            "date": "4/0254",
+            "gameType": "gold"
+        },
+        {
+            "opponent": "Bobcats",
+            "date": "4/09/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Bucks",
+            "date": "4/12/2014",
+            "gameType": "white"
+        },
+        {
+            "opponent": "Heat",
+            "date": "4/14/2014",
             "gameType": "silver"
         }
     ],
