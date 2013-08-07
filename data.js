@@ -213,7 +213,8 @@ var gameData = {
                 "white": 157,
                 "blue": 171,
                 "silver": 198,
-                "gold": 274
+                "gold": 274,
+                "platium": N/A
 
             },
             "CourtsideCtrH_T": {
@@ -221,7 +222,8 @@ var gameData = {
                 "white": 162,
                 "blue": 175,
                 "silver": 206,
-                "gold": 281
+                "gold": 281,
+                "platium": N/A
 
             },
             "CourtsideEndH_T": {
@@ -229,7 +231,8 @@ var gameData = {
                 "white": 122,
                 "blue": 131,
                 "silver": 155,
-                "gold": 211
+                "gold": 211,
+                "platium": N/A
 
             },
             "LLCorners": {
@@ -237,7 +240,8 @@ var gameData = {
                 "white": 65,
                 "blue": 70,
                 "silver": 82,
-                "gold": 112
+                "gold": 112,
+                "platium": N/A
 
             },
             "LLEnds": {
@@ -245,7 +249,8 @@ var gameData = {
                 "white": 40,
                 "blue": 43,
                 "silver": 51,
-                "gold": 69
+                "gold": 69,
+                "platium": N/A
 
             },
             "AcelaLedgeRow1": {
@@ -253,7 +258,8 @@ var gameData = {
                 "white": 86,
                 "blue": 93,
                 "silver": 108,
-                "gold": 150
+                "gold": 150,
+                "platium": N/A
 
             },
             "AcelaLedgeRow2": {
@@ -261,7 +267,8 @@ var gameData = {
                 "white": 86,
                 "blue": 93,
                 "silver": 108,
-                "gold": 150
+                "gold": 150,
+                "platium": N/A
 
             },
             "AcelaClubCenter": {
@@ -269,7 +276,8 @@ var gameData = {
                 "white": 86,
                 "blue": 93,
                 "silver": 108,
-                "gold": 150
+                "gold": 150,
+                "platium": N/A
 
             },
             "AcelaClubBaseline": {
@@ -277,7 +285,8 @@ var gameData = {
                 "white": 63,
                 "blue": 68,
                 "silver": 79,
-                "gold": 110
+                "gold": 110,
+                "platium": N/A
 
             },
             "AcelaClubCorners": {
@@ -285,7 +294,8 @@ var gameData = {
                 "white": 40,
                 "blue": 43,
                 "silver": 50,
-                "gold": 70
+                "gold": 70,
+                "platium": N/A
 
             },
             "ULCenter": {
@@ -293,7 +303,8 @@ var gameData = {
                 "white": 20,
                 "blue": 22,
                 "silver": 23,
-                "gold": 28
+                "gold": 28,
+                "platium": N/A
 
             },
             "ULEndzones": {
@@ -301,7 +312,8 @@ var gameData = {
                 "white": 20,
                 "blue": 22,
                 "silver": 23,
-                "gold": 28
+                "gold": 28,
+                "platium": N/A
 
             }
 
