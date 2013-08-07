@@ -649,14 +649,59 @@ var gameData = {
         }
     },
     "sections": {
-        "VIPBox": {
-            "color": "#a5fe12"
+        "VIPGoldBBB(SE/SW)": {
+            "color": "#EC008C"
         },     
+        "VIPGoldBBB(NE/NW)": {
+            "color": "#002b5c"
+        },
+        "VIPBB_CCCenter": {
+            "color": "#D4AB8A"
+        },
+        "VIPBB_CCBaseline": {
+            "color": "#57C7F3"
+        },
+        "VIPBox": {
+            "color": "#72A868"
+        },
+        "CourtsideCtrA_G": {
+            "color": "#808080"
+        },
+        "CourtsideEndA_G": {
+            "color": "#CCDFF3"
+        },
         "CourtsideCtrH_T": {
-            "color": "#464646"
+            "color": "#A30046"
         },
         "CourtsideEndH_T": {
-            "color": "#ae32e4"
+            "color": "#2d5485"
+        },
+        "LLCorners": {
+            "color": "#E31837"
+        },
+        "LLEnds": {
+            "color": "#1F3D1C"
+        },
+        "AcelaLedgeRow1": {
+            "color": "#7E7D32"
+        },
+        "AcelaLedgeRow2": {
+            "color": "#C9A2CB"
+        },
+        "AcelaClubCenter": {
+            "color": "#DEEAAA"
+        },
+        "AcelaClubBaseline": {
+            "color": "#1F3D1C"
+        },
+        "AcelaClubCorners": {
+            "color": "#632243"
+        },
+        "ULCenter": {
+            "color": "#002B5C"
+        },
+        "ULEndzones": {
+            "color": "#F15D2F"
         },
     }
 
