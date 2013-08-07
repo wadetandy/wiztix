@@ -1,33 +1,208 @@
 var gameData = {
     "games": [
         {
-            "opponent": "Celtics",
-            "date": "02/02/2013",
+            "opponent": "76ers",
+            "date": "11/01/2013",
+            "gameType": "white"
+        },
+        {
+            "opponent": "Nets",
+            "date": "11/08/2013",
+            "gameType": "blue"
+        },
+        {
+            "opponent": "Cavaliers",
+            "date": "11/16/2013",
+            "gameType": "white"
+        },
+        {
+            "opponent": "Timberwolves",
+            "date": "11/19/2013",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Knicks",
+            "date": "11/23/2013",
             "gameType": "gold"
         },
         {
-            "opponent": "Heat",
-            "date": "02/04/2013",
+            "opponent": "Lakers",
+            "date": "11/26/2013",
+            "gameType": "blue"
+        },
+        {
+            "opponent": "Hawks",
+            "date": "11/30/2013",
             "gameType": "white"
         },
         {
             "opponent": "Magic",
-            "date": "02/06/2013",
+            "date": "12/02/2013",
             "gameType": "red"
         },
         {
+            "opponent": "Bucks",
+            "date": "12/06/2013",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Nuggets",
+            "date": "12/09/2013",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Clippers",
+            "date": "12/14/2013",
+            "gameType": "gold"
+        },
+        {
+            "opponent": "Pistons",
+            "date": "12/28/2013",
+            "gameType": "white"
+        },
+        {
+            "opponent": "Mavericks",
+            "date": "1/01/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Raptors",
+            "date": "1/03/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Warriors",
+            "date": "1/05/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Rockets",
+            "date": "1/11/2014",
+            "gameType": "platinum"
+        },
+        {
+            "opponent": "Heat",
+            "date": "1/15/2014",
+            "gameType": "platinum"
+        },
+        {
+            "opponent": "Bulls",
+            "date": "1/17/2014",
+            "gameType": "gold"
+        },
+        {
+            "opponent": "Pistons",
+            "date": "1/18/2014",
+            "gameType": "white"
+        },
+        {
+            "opponent": "76ers",
+            "date": "1/20/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Celtics",
+            "date": "1/22/2014",
+            "gameType": "white"
+        },
+        {
             "opponent": "Thunder",
-            "date": "02/02/2013",
+            "date": "2/01/2014",
+            "gameType": "platinum"
+        },
+        {
+            "opponent": "Trail Blazers",
+            "date": "2/03/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Spurs",
+            "date": "2/05/2014",
             "gameType": "blue"
         },
         {
-            "opponent": "Hornets",
-            "date": "02/09/2013",
-            "gameType": "silver"
+            "opponent": "Cavaliers",
+            "date": "2/07/2014",
+            "gameType": "white"
+        },
+        {
+            "opponent": "Kings",
+            "date": "2/09/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Raptors",
+            "date": "2/18/2014",
+            "gameType": "red"
         },
         {
             "opponent": "Pelicans",
-            "date": "02/10/2013",
+            "date": "2/22/2014",
+            "gameType": "white"
+        },
+        {
+            "opponent": "Magic",
+            "date": "2/25/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Grizzlies",
+            "date": "3/03/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Jazz",
+            "date": "3/05/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Bobcats",
+            "date": "3/12/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Nets",
+            "date": "3/15/2014",
+            "gameType": "platinum"
+        },
+        {
+            "opponent": "Suns",
+            "date": "3/26/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Pacers",
+            "date": "3/28/2014",
+            "gameType": "blue"
+        },
+        {
+            "opponent": "Hawks",
+            "date": "3/29/2014",
+            "gameType": "blue"
+        },
+        {
+            "opponent": "Celtics",
+            "date": "4/02/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Bulls",
+            "date": "4/0254",
+            "gameType": "gold"
+        },
+        {
+            "opponent": "Bobcats",
+            "date": "4/09/2014",
+            "gameType": "red"
+        },
+        {
+            "opponent": "Bucks",
+            "date": "4/12/2014",
+            "gameType": "white"
+        },
+        {
+            "opponent": "Heat",
+            "date": "4/14/2014",
             "gameType": "silver"
         }
     ],
@@ -38,7 +213,8 @@ var gameData = {
                 "white": 157,
                 "blue": 171,
                 "silver": 198,
-                "gold": 274
+                "gold": 274,
+                "platinum": 342
 
             },
             "CourtsideCtrH_T": {
@@ -46,7 +222,8 @@ var gameData = {
                 "white": 162,
                 "blue": 175,
                 "silver": 206,
-                "gold": 281
+                "gold": 281,
+                "platinum": 350
 
             },
             "CourtsideEndH_T": {
@@ -54,7 +231,8 @@ var gameData = {
                 "white": 122,
                 "blue": 131,
                 "silver": 155,
-                "gold": 211
+                "gold": 211,
+                "platinum": 263
 
             },
             "LLCorners": {
@@ -62,7 +240,8 @@ var gameData = {
                 "white": 65,
                 "blue": 70,
                 "silver": 82,
-                "gold": 112
+                "gold": 112,
+                "platinum": 140
 
             },
             "LLEnds": {
@@ -70,7 +249,8 @@ var gameData = {
                 "white": 40,
                 "blue": 43,
                 "silver": 51,
-                "gold": 69
+                "gold": 69,
+                "platinum": 86
 
             },
             "AcelaLedgeRow1": {
@@ -78,7 +258,8 @@ var gameData = {
                 "white": 86,
                 "blue": 93,
                 "silver": 108,
-                "gold": 150
+                "gold": 150,
+                "platinum": 187
 
             },
             "AcelaLedgeRow2": {
@@ -86,7 +267,8 @@ var gameData = {
                 "white": 86,
                 "blue": 93,
                 "silver": 108,
-                "gold": 150
+                "gold": 150,
+                "platinum": 187
 
             },
             "AcelaClubCenter": {
@@ -94,7 +276,8 @@ var gameData = {
                 "white": 86,
                 "blue": 93,
                 "silver": 108,
-                "gold": 150
+                "gold": 150,
+                "platinum": 187
 
             },
             "AcelaClubBaseline": {
@@ -102,7 +285,8 @@ var gameData = {
                 "white": 63,
                 "blue": 68,
                 "silver": 79,
-                "gold": 110
+                "gold": 110,
+                "platinum": 137
 
             },
             "AcelaClubCorners": {
@@ -110,7 +294,8 @@ var gameData = {
                 "white": 40,
                 "blue": 43,
                 "silver": 50,
-                "gold": 70
+                "gold": 70,
+                "platinum": 87
 
             },
             "ULCenter": {
@@ -118,7 +303,8 @@ var gameData = {
                 "white": 20,
                 "blue": 22,
                 "silver": 23,
-                "gold": 28
+                "gold": 28,
+                "platinum": 30
 
             },
             "ULEndzones": {
@@ -126,7 +312,8 @@ var gameData = {
                 "white": 20,
                 "blue": 22,
                 "silver": 23,
-                "gold": 28
+                "gold": 28,
+                "platinum": 30
 
             }
 
@@ -137,7 +324,8 @@ var gameData = {
                 "white": 433,
                 "blue": 472,
                 "silver": 551,
-                "gold": 748
+                "gold": 748,
+                "platinum": 925
 
             },
             "VIPGoldBBB(NE/NW)": {
@@ -145,7 +333,8 @@ var gameData = {
                 "white": 314,
                 "blue": 343,
                 "silver": 400,
-                "gold": 543
+                "gold": 543,
+                "platinum": 672
 
             },
             "VIPBB_CCCenter": {
@@ -153,7 +342,8 @@ var gameData = {
                 "white": 258,
                 "blue": 282,
                 "silver": 329,
-                "gold": 446
+                "gold": 446,
+                "platinum": 552
 
             },
             "VIPBB_CCBaseline": {
@@ -161,7 +351,8 @@ var gameData = {
                 "white": 233,
                 "blue": 254,
                 "silver": 296,
-                "gold": 402
+                "gold": 402,
+                "platinum": 498
 
             },
             "VIPBox": {
@@ -169,7 +360,8 @@ var gameData = {
                 "white": 150,
                 "blue": 164,
                 "silver": 191,
-                "gold": 260
+                "gold": 260,
+                "platinum": 321
 
             },
             "CourtsideCtrA_G": {
@@ -177,7 +369,8 @@ var gameData = {
                 "white": 227,
                 "blue": 245,
                 "silver": 291,
-                "gold": 391
+                "gold": 391,
+                "platinum": 482
 
             },
             "CourtsideEndA_G": {
@@ -185,7 +378,8 @@ var gameData = {
                 "white": 171,
                 "blue": 184,
                 "silver": 219,
-                "gold": 294
+                "gold": 294,
+                "platinum": 363
 
             },
             "CourtsideCtrH_T": {
@@ -193,7 +387,8 @@ var gameData = {
                 "white": 156,
                 "blue": 168,
                 "silver": 200,
-                "gold": 268
+                "gold": 268,
+                "platinum": 331
 
             },
             "CourtsideEndH_T": {
@@ -201,7 +396,8 @@ var gameData = {
                 "white": 117,
                 "blue": 126,
                 "silver": 150,
-                "gold": 202
+                "gold": 202,
+                "platinum": 249
 
             },
             "LLCorners": {
@@ -209,7 +405,8 @@ var gameData = {
                 "white": 62,
                 "blue": 67,
                 "silver": 80,
-                "gold": 107
+                "gold": 107,
+                "platinum": 132
 
             },
             "LLEnds": {
@@ -217,7 +414,8 @@ var gameData = {
                 "white": 38,
                 "blue": 41,
                 "silver": 49,
-                "gold": 66
+                "gold": 66,
+                "platinum": 82
 
             },
             "AcelaLedgeRow1": {
@@ -225,7 +423,8 @@ var gameData = {
                 "white": 82,
                 "blue": 90,
                 "silver": 105,
-                "gold": 142
+                "gold": 142,
+                "platinum": 176
 
             },
             "AcelaLedgeRow2": {
@@ -233,7 +432,8 @@ var gameData = {
                 "white": 82,
                 "blue": 90,
                 "silver": 105,
-                "gold": 142
+                "gold": 142,
+                "platinum": 176
 
             },
             "AcelaClubCenter": {
@@ -241,7 +441,8 @@ var gameData = {
                 "white": 82,
                 "blue": 90,
                 "silver": 105,
-                "gold": 142
+                "gold": 142,
+                "platinum": 176
 
             },
             "AcelaClubBaseline": {
@@ -249,7 +450,8 @@ var gameData = {
                 "white": 60,
                 "blue": 66,
                 "silver": 77,
-                "gold": 104
+                "gold": 104,
+                "platinum": 129
 
             },
             "AcelaClubCorners": {
@@ -257,7 +459,8 @@ var gameData = {
                 "white": 38,
                 "blue": 42,
                 "silver": 49,
-                "gold": 66
+                "gold": 66,
+                "platinum": 82
 
             },
             "ULCenter": {
@@ -265,7 +468,8 @@ var gameData = {
                 "white": 19,
                 "blue": 21,
                 "silver": 22,
-                "gold": 27
+                "gold": 27,
+                "platinum": 29
 
             },
             "ULEndzones": {
@@ -273,7 +477,8 @@ var gameData = {
                 "white": 19,
                 "blue": 21,
                 "silver": 22,
-                "gold": 27
+                "gold": 27,
+                "platinum": 29
 
             }
 
@@ -284,7 +489,8 @@ var gameData = {
                 "white": 425,
                 "blue": 453,
                 "silver": 512,
-                "gold": 591
+                "gold": 591,
+                "platinum": 748
 
             },
             "VIPGoldBBB(NE/NW)": {
@@ -292,7 +498,8 @@ var gameData = {
                 "white": 308,
                 "blue": 328,
                 "silver": 371,
-                "gold": 429
+                "gold": 429,
+                "platinum": 543
 
             },
             "VIPBB_CCCenter": {
@@ -300,7 +507,8 @@ var gameData = {
                 "white": 253,
                 "blue": 270,
                 "silver": 305,
-                "gold": 352
+                "gold": 352,
+                "platinum": 446
 
             },
             "VIPBB_CCBaseline": {
@@ -308,7 +516,8 @@ var gameData = {
                 "white": 228,
                 "blue": 243,
                 "silver": 275,
-                "gold": 318
+                "gold": 318,
+                "platinum": 402
 
             },
             "VIPBox": {
@@ -316,7 +525,8 @@ var gameData = {
                 "white": 147,
                 "blue": 157,
                 "silver": 178,
-                "gold": 205
+                "gold": 205,
+                "platinum": 260
 
             },
             "CourtsideCtrA_G": {
@@ -324,7 +534,8 @@ var gameData = {
                 "white": 218,
                 "blue": 236,
                 "silver": 263,
-                "gold": 345
+                "gold": 345,
+                "platinum": 391
 
             },
             "CourtsideEndA_G": {
@@ -332,7 +543,8 @@ var gameData = {
                 "white": 164,
                 "blue": 178,
                 "silver": 198,
-                "gold": 260
+                "gold": 260,
+                "platinum": 294
 
             },
             "CourtsideCtrH_T": {
@@ -340,7 +552,8 @@ var gameData = {
                 "white": 150,
                 "blue": 162,
                 "silver": 181,
-                "gold": 237
+                "gold": 237,
+                "platinum": 268
 
             },
             "CourtsideEndH_T": {
@@ -348,7 +561,8 @@ var gameData = {
                 "white": 112,
                 "blue": 122,
                 "silver": 136,
-                "gold": 178
+                "gold": 178,
+                "platinum": 202
 
             },
             "LLCorners": {
@@ -356,7 +570,8 @@ var gameData = {
                 "white": 60,
                 "blue": 65,
                 "silver": 72,
-                "gold": 95
+                "gold": 95,
+                "platinum": 107
 
             },
             "LLEnds": {
@@ -364,7 +579,8 @@ var gameData = {
                 "white": 37,
                 "blue": 40,
                 "silver": 44,
-                "gold": 58
+                "gold": 58,
+                "platinum": 66
 
             },
             "AcelaLedgeRow1": {
@@ -372,7 +588,8 @@ var gameData = {
                 "white": 80,
                 "blue": 86,
                 "silver": 97,
-                "gold": 112
+                "gold": 112,
+                "platinum": 142
 
             },
             "AcelaLedgeRow2": {
@@ -380,7 +597,8 @@ var gameData = {
                 "white": 80,
                 "blue": 86,
                 "silver": 97,
-                "gold": 112
+                "gold": 112,
+                "platinum": 142
 
             },
             "AcelaClubCenter": {
@@ -388,7 +606,8 @@ var gameData = {
                 "white": 80,
                 "blue": 86,
                 "silver": 97,
-                "gold": 112
+                "gold": 112,
+                "platinum": 142
 
             },
             "AcelaClubBaseline": {
@@ -396,7 +615,8 @@ var gameData = {
                 "white": 58,
                 "blue": 63,
                 "silver": 71,
-                "gold": 82
+                "gold": 82,
+                "platinum": 104
 
             },
             "AcelaClubCorners": {
@@ -404,7 +624,8 @@ var gameData = {
                 "white": 37,
                 "blue": 40,
                 "silver": 45,
-                "gold": 52
+                "gold": 52,
+                "platinum": 66
 
             },
             "ULCenter": {
@@ -412,7 +633,8 @@ var gameData = {
                 "white": 18,
                 "blue": 20,
                 "silver": 21,
-                "gold": 26
+                "gold": 26,
+                "platinum": 28
 
             },
             "ULEndzones": {
@@ -420,7 +642,8 @@ var gameData = {
                 "white": 18,
                 "blue": 20,
                 "silver": 21,
-                "gold": 26
+                "gold": 26,
+                "platinum": 28
 
             }
         }
