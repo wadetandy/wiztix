@@ -22,8 +22,8 @@ function LoadScripts() {
 }
 
 function addToGameList(gameInfo) {
-    var element = $("<tr class='gameInfo'><td>" + gameInfo.opponent + "</td><td>" + gameInfo.date+"</td></tr>")
-    var gameId = "" + gameInfo.opponent + "_" + gameInfo.date.replace(/\//g,'')
+    var element = $("<tr class='gameInfo'><td>" + gameInfo.opponent + "</td><td>" + gameInfo.date + "</td><td>" + gameinfo.gameType "</td></tr>")
+    var gameId = "" + gameInfo.opponent + "_" + gameInfo.date + "_" + gameinfo.gameType.replace(/\//g,'')
     element.attr('id',gameId)
     element.data('gameInfo', gameInfo)
     element.data('gameInfo').gameId = gameId
