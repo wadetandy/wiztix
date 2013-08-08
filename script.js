@@ -23,7 +23,7 @@ function LoadScripts() {
 
 function addToGameList(gameInfo) {
     var element = $("<tr class='gameInfo'><td>" + gameInfo.opponent + "</td><td>" + gameInfo.date + "</td><td>" + gameInfo.gameType+"</td></tr>")
-    var gameId = "" + gameInfo.opponent + "_" + gameInfo.date.replace + "_" + gameInfo.gameType.replace(/\//g,'')
+    var gameId = "" + gameInfo.opponent + "_" + gameInfo.gameType + "_" + gameInfo.date.replace(/\//g,'')
     element.attr('id',gameId)
     element.data('gameInfo', gameInfo)
     element.data('gameInfo').gameId = gameId
