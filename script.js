@@ -82,9 +82,6 @@ function displaySeating() {
         if (gameData.sections[key]) {
           sectionInfo.css('background-color', gameData.sections[key].color)
         }
-         if (gameData.type[key]) {
-          sectionInfo.css('font-color', gameData.type[key].color)
-        }
         insertAt.append(sectionInfo)
         sectionInfo.on("click", mkAddToCalcCB(key,sectionInfo.data('price')))
     }
