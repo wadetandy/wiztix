@@ -3,646 +3,646 @@ var gameData = {
         {
             "opponent": "76ers",
             "date": "11/01/2013",
-            "gameType": "white"
+            "gameType": "White"
         },
         {
             "opponent": "Nets",
             "date": "11/08/2013",
-            "gameType": "blue"
+            "gameType": "Blue"
         },
         {
             "opponent": "Cavaliers",
             "date": "11/16/2013",
-            "gameType": "white"
+            "gameType": "White"
         },
         {
             "opponent": "Timberwolves",
             "date": "11/19/2013",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Knicks",
             "date": "11/23/2013",
-            "gameType": "gold"
+            "gameType": "Gold"
         },
         {
             "opponent": "Lakers",
             "date": "11/26/2013",
-            "gameType": "blue"
+            "gameType": "Blue"
         },
         {
             "opponent": "Hawks",
             "date": "11/30/2013",
-            "gameType": "white"
+            "gameType": "White"
         },
         {
             "opponent": "Magic",
             "date": "12/02/2013",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Bucks",
             "date": "12/06/2013",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Nuggets",
             "date": "12/09/2013",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Clippers",
             "date": "12/14/2013",
-            "gameType": "gold"
+            "gameType": "Gold"
         },
         {
             "opponent": "Pistons",
             "date": "12/28/2013",
-            "gameType": "white"
+            "gameType": "White"
         },
         {
             "opponent": "Mavericks",
             "date": "1/01/2014",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Raptors",
             "date": "1/03/2014",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Warriors",
             "date": "1/05/2014",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Rockets",
             "date": "1/11/2014",
-            "gameType": "platinum"
+            "gameType": "Platinum"
         },
         {
             "opponent": "Heat",
             "date": "1/15/2014",
-            "gameType": "platinum"
+            "gameType": "Platinum"
         },
         {
             "opponent": "Bulls",
             "date": "1/17/2014",
-            "gameType": "gold"
+            "gameType": "Gold"
         },
         {
             "opponent": "Pistons",
             "date": "1/18/2014",
-            "gameType": "white"
+            "gameType": "White"
         },
         {
             "opponent": "76ers",
             "date": "1/20/2014",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Celtics",
             "date": "1/22/2014",
-            "gameType": "white"
+            "gameType": "White"
         },
         {
             "opponent": "Thunder",
             "date": "2/01/2014",
-            "gameType": "platinum"
+            "gameType": "Platinum"
         },
         {
             "opponent": "Trail Blazers",
             "date": "2/03/2014",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Spurs",
             "date": "2/05/2014",
-            "gameType": "blue"
+            "gameType": "Blue"
         },
         {
             "opponent": "Cavaliers",
             "date": "2/07/2014",
-            "gameType": "white"
+            "gameType": "White"
         },
         {
             "opponent": "Kings",
             "date": "2/09/2014",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Raptors",
             "date": "2/18/2014",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Pelicans",
             "date": "2/22/2014",
-            "gameType": "white"
+            "gameType": "White"
         },
         {
             "opponent": "Magic",
             "date": "2/25/2014",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Grizzlies",
             "date": "3/03/2014",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Jazz",
             "date": "3/05/2014",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Bobcats",
             "date": "3/12/2014",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Nets",
             "date": "3/15/2014",
-            "gameType": "platinum"
+            "gameType": "Platinum"
         },
         {
             "opponent": "Suns",
             "date": "3/26/2014",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Pacers",
             "date": "3/28/2014",
-            "gameType": "blue"
+            "gameType": "Blue"
         },
         {
             "opponent": "Hawks",
             "date": "3/29/2014",
-            "gameType": "blue"
+            "gameType": "Blue"
         },
         {
             "opponent": "Celtics",
             "date": "4/02/2014",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Bulls",
             "date": "4/0254",
-            "gameType": "gold"
+            "gameType": "Gold"
         },
         {
             "opponent": "Bobcats",
             "date": "4/09/2014",
-            "gameType": "red"
+            "gameType": "Red"
         },
         {
             "opponent": "Bucks",
             "date": "4/12/2014",
-            "gameType": "white"
+            "gameType": "White"
         },
         {
             "opponent": "Heat",
             "date": "4/14/2014",
-            "gameType": "silver"
+            "gameType": "Silver"
         }
     ],
     "plans": {
        "5": {
             "VIPBox": {
-                "red": 150,
-                "white": 157,
-                "blue": 171,
-                "silver": 198,
-                "gold": 274,
-                "platinum": 0
+                "Red": 150,
+                "White": 157,
+                "Blue": 171,
+                "Silver": 198,
+                "Gold": 274,
+                "Platinum": 0
 
             },
             "CourtsideCtrH_T": {
-                "red": 156,
-                "white": 162,
-                "blue": 175,
-                "silver": 206,
-                "gold": 281,
-                "platinum": 0
+                "Red": 156,
+                "White": 162,
+                "Blue": 175,
+                "Silver": 206,
+                "Gold": 281,
+                "Platinum": 0
 
             },
             "CourtsideEndH_T": {
-                "red": 117,
-                "white": 122,
-                "blue": 131,
-                "silver": 155,
-                "gold": 211,
-                "platinum": 0
+                "Red": 117,
+                "White": 122,
+                "Blue": 131,
+                "Silver": 155,
+                "Gold": 211,
+                "Platinum": 0
 
             },
             "LLCorners": {
-                "red": 62,
-                "white": 65,
-                "blue": 70,
-                "silver": 82,
-                "gold": 112,
-                "platinum": 0
+                "Red": 62,
+                "White": 65,
+                "Blue": 70,
+                "Silver": 82,
+                "Gold": 112,
+                "Platinum": 0
 
             },
             "LLEnds": {
-                "red": 38,
-                "white": 40,
-                "blue": 43,
-                "silver": 51,
-                "gold": 69,
-                "platinum": 0
+                "Red": 38,
+                "White": 40,
+                "Blue": 43,
+                "Silver": 51,
+                "Gold": 69,
+                "Platinum": 0
 
             },
             "AcelaLedgeRow1": {
-                "red": 82,
-                "white": 86,
-                "blue": 93,
-                "silver": 108,
-                "gold": 150,
-                "platinum": 0
+                "Red": 82,
+                "White": 86,
+                "Blue": 93,
+                "Silver": 108,
+                "Gold": 150,
+                "Platinum": 0
 
             },
             "AcelaLedgeRow2": {
-                "red": 82,
-                "white": 86,
-                "blue": 93,
-                "silver": 108,
-                "gold": 150,
-                "platinum": 0
+                "Red": 82,
+                "White": 86,
+                "Blue": 93,
+                "Silver": 108,
+                "Gold": 150,
+                "Platinum": 0
 
             },
             "AcelaClubCenter": {
-                "red": 82,
-                "white": 86,
-                "blue": 93,
-                "silver": 108,
-                "gold": 150,
-                "platinum": 0
+                "Red": 82,
+                "White": 86,
+                "Blue": 93,
+                "Silver": 108,
+                "Gold": 150,
+                "Platinum": 0
 
             },
             "AcelaClubBaseline": {
-                "red": 60,
-                "white": 63,
-                "blue": 68,
-                "silver": 79,
-                "gold": 110,
-                "platinum": 0
+                "Red": 60,
+                "White": 63,
+                "Blue": 68,
+                "Silver": 79,
+                "Gold": 110,
+                "Platinum": 0
 
             },
             "AcelaClubCorners": {
-                "red": 38,
-                "white": 40,
-                "blue": 43,
-                "silver": 50,
-                "gold": 70,
-                "platinum": 0
+                "Red": 38,
+                "White": 40,
+                "Blue": 43,
+                "Silver": 50,
+                "Gold": 70,
+                "Platinum": 0
 
             },
             "ULCenter": {
-                "red": 19,
-                "white": 20,
-                "blue": 22,
-                "silver": 23,
-                "gold": 28,
-                "platinum": 0
+                "Red": 19,
+                "White": 20,
+                "Blue": 22,
+                "Silver": 23,
+                "Gold": 28,
+                "Platinum": 0
 
             },
             "ULEndzones": {
-                "red": 19,
-                "white": 20,
-                "blue": 22,
-                "silver": 23,
-                "gold": 28,
-                "platinum": 0
+                "Red": 19,
+                "White": 20,
+                "Blue": 22,
+                "Silver": 23,
+                "Gold": 28,
+                "Platinum": 0
             }
 
         },
         "13": {
             "VIPGoldBBB(SE/SW)": {
-                "red": 413,
-                "white": 433,
-                "blue": 472,
-                "silver": 551,
-                "gold": 748,
-                "platinum": 925
+                "Red": 413,
+                "White": 433,
+                "Blue": 472,
+                "Silver": 551,
+                "Gold": 748,
+                "Platinum": 925
 
             },
             "VIPGoldBBB(NE/NW)": {
-                "red": 300,
-                "white": 314,
-                "blue": 343,
-                "silver": 400,
-                "gold": 543,
-                "platinum": 672
+                "Red": 300,
+                "White": 314,
+                "Blue": 343,
+                "Silver": 400,
+                "Gold": 543,
+                "Platinum": 672
 
             },
             "VIPBB_CCCenter": {
-                "red": 246,
-                "white": 258,
-                "blue": 282,
-                "silver": 329,
-                "gold": 446,
-                "platinum": 552
+                "Red": 246,
+                "White": 258,
+                "Blue": 282,
+                "Silver": 329,
+                "Gold": 446,
+                "Platinum": 552
 
             },
             "VIPBB_CCBaseline": {
-                "red": 222,
-                "white": 233,
-                "blue": 254,
-                "silver": 296,
-                "gold": 402,
-                "platinum": 498
+                "Red": 222,
+                "White": 233,
+                "Blue": 254,
+                "Silver": 296,
+                "Gold": 402,
+                "Platinum": 498
 
             },
             "VIPBox": {
-                "red": 143,
-                "white": 150,
-                "blue": 164,
-                "silver": 191,
-                "gold": 260,
-                "platinum": 321
+                "Red": 143,
+                "White": 150,
+                "Blue": 164,
+                "Silver": 191,
+                "Gold": 260,
+                "Platinum": 321
 
             },
             "CourtsideCtrA_G": {
-                "red": 218,
-                "white": 227,
-                "blue": 245,
-                "silver": 291,
-                "gold": 391,
-                "platinum": 482
+                "Red": 218,
+                "White": 227,
+                "Blue": 245,
+                "Silver": 291,
+                "Gold": 391,
+                "Platinum": 482
 
             },
             "CourtsideEndA_G": {
-                "red": 164,
-                "white": 171,
-                "blue": 184,
-                "silver": 219,
-                "gold": 294,
-                "platinum": 363
+                "Red": 164,
+                "White": 171,
+                "Blue": 184,
+                "Silver": 219,
+                "Gold": 294,
+                "Platinum": 363
 
             },
             "CourtsideCtrH_T": {
-                "red": 150,
-                "white": 156,
-                "blue": 168,
-                "silver": 200,
-                "gold": 268,
-                "platinum": 331
+                "Red": 150,
+                "White": 156,
+                "Blue": 168,
+                "Silver": 200,
+                "Gold": 268,
+                "Platinum": 331
 
             },
             "CourtsideEndH_T": {
-                "red": 112,
-                "white": 117,
-                "blue": 126,
-                "silver": 150,
-                "gold": 202,
-                "platinum": 249
+                "Red": 112,
+                "White": 117,
+                "Blue": 126,
+                "Silver": 150,
+                "Gold": 202,
+                "Platinum": 249
 
             },
             "LLCorners": {
-                "red": 60,
-                "white": 62,
-                "blue": 67,
-                "silver": 80,
-                "gold": 107,
-                "platinum": 132
+                "Red": 60,
+                "White": 62,
+                "Blue": 67,
+                "Silver": 80,
+                "Gold": 107,
+                "Platinum": 132
 
             },
             "LLEnds": {
-                "red": 37,
-                "white": 38,
-                "blue": 41,
-                "silver": 49,
-                "gold": 66,
-                "platinum": 82
+                "Red": 37,
+                "White": 38,
+                "Blue": 41,
+                "Silver": 49,
+                "Gold": 66,
+                "Platinum": 82
 
             },
             "AcelaLedgeRow1": {
-                "red": 78,
-                "white": 82,
-                "blue": 90,
-                "silver": 105,
-                "gold": 142,
-                "platinum": 176
+                "Red": 78,
+                "White": 82,
+                "Blue": 90,
+                "Silver": 105,
+                "Gold": 142,
+                "Platinum": 176
 
             },
             "AcelaLedgeRow2": {
-                "red": 78,
-                "white": 82,
-                "blue": 90,
-                "silver": 105,
-                "gold": 142,
-                "platinum": 176
+                "Red": 78,
+                "White": 82,
+                "Blue": 90,
+                "Silver": 105,
+                "Gold": 142,
+                "Platinum": 176
 
             },
             "AcelaClubCenter": {
-                "red": 78,
-                "white": 82,
-                "blue": 90,
-                "silver": 105,
-                "gold": 142,
-                "platinum": 176
+                "Red": 78,
+                "White": 82,
+                "Blue": 90,
+                "Silver": 105,
+                "Gold": 142,
+                "Platinum": 176
 
             },
             "AcelaClubBaseline": {
-                "red": 57,
-                "white": 60,
-                "blue": 66,
-                "silver": 77,
-                "gold": 104,
-                "platinum": 129
+                "Red": 57,
+                "White": 60,
+                "Blue": 66,
+                "Silver": 77,
+                "Gold": 104,
+                "Platinum": 129
 
             },
             "AcelaClubCorners": {
-                "red": 36,
-                "white": 38,
-                "blue": 42,
-                "silver": 49,
-                "gold": 66,
-                "platinum": 82
+                "Red": 36,
+                "White": 38,
+                "Blue": 42,
+                "Silver": 49,
+                "Gold": 66,
+                "Platinum": 82
 
             },
             "ULCenter": {
-                "red": 18,
-                "white": 19,
-                "blue": 21,
-                "silver": 22,
-                "gold": 27,
-                "platinum": 29
+                "Red": 18,
+                "White": 19,
+                "Blue": 21,
+                "Silver": 22,
+                "Gold": 27,
+                "Platinum": 29
 
             },
             "ULEndzones": {
-                "red": 18,
-                "white": 19,
-                "blue": 21,
-                "silver": 22,
-                "gold": 27,
-                "platinum": 29
+                "Red": 18,
+                "White": 19,
+                "Blue": 21,
+                "Silver": 22,
+                "Gold": 27,
+                "Platinum": 29
 
             }
 
         },
         "21": {
             "VIPGoldBBB(SE/SW)": {
-                "red": 405,
-                "white": 425,
-                "blue": 453,
-                "silver": 512,
-                "gold": 591,
-                "platinum": 748
+                "Red": 405,
+                "White": 425,
+                "Blue": 453,
+                "Silver": 512,
+                "Gold": 591,
+                "Platinum": 748
 
             },
             "VIPGoldBBB(NE/NW)": {
-                "red": 294,
-                "white": 308,
-                "blue": 328,
-                "silver": 371,
-                "gold": 429,
-                "platinum": 543
+                "Red": 294,
+                "White": 308,
+                "Blue": 328,
+                "Silver": 371,
+                "Gold": 429,
+                "Platinum": 543
 
             },
             "VIPBB_CCCenter": {
-                "red": 242,
-                "white": 253,
-                "blue": 270,
-                "silver": 305,
-                "gold": 352,
-                "platinum": 446
+                "Red": 242,
+                "White": 253,
+                "Blue": 270,
+                "Silver": 305,
+                "Gold": 352,
+                "Platinum": 446
 
             },
             "VIPBB_CCBaseline": {
-                "red": 218,
-                "white": 228,
-                "blue": 243,
-                "silver": 275,
-                "gold": 318,
-                "platinum": 402
+                "Red": 218,
+                "White": 228,
+                "Blue": 243,
+                "Silver": 275,
+                "Gold": 318,
+                "Platinum": 402
 
             },
             "VIPBox": {
-                "red": 141,
-                "white": 147,
-                "blue": 157,
-                "silver": 178,
-                "gold": 205,
-                "platinum": 260
+                "Red": 141,
+                "White": 147,
+                "Blue": 157,
+                "Silver": 178,
+                "Gold": 205,
+                "Platinum": 260
 
             },
             "CourtsideCtrA_G": {
-                "red": 209,
-                "white": 218,
-                "blue": 236,
-                "silver": 263,
-                "gold": 345,
-                "platinum": 391
+                "Red": 209,
+                "White": 218,
+                "Blue": 236,
+                "Silver": 263,
+                "Gold": 345,
+                "Platinum": 391
 
             },
             "CourtsideEndA_G": {
-                "red": 157,
-                "white": 164,
-                "blue": 178,
-                "silver": 198,
-                "gold": 260,
-                "platinum": 294
+                "Red": 157,
+                "White": 164,
+                "Blue": 178,
+                "Silver": 198,
+                "Gold": 260,
+                "Platinum": 294
 
             },
             "CourtsideCtrH_T": {
-                "red": 143,
-                "white": 150,
-                "blue": 162,
-                "silver": 181,
-                "gold": 237,
-                "platinum": 268
+                "Red": 143,
+                "White": 150,
+                "Blue": 162,
+                "Silver": 181,
+                "Gold": 237,
+                "Platinum": 268
 
             },
             "CourtsideEndH_T": {
-                "red": 108,
-                "white": 112,
-                "blue": 122,
-                "silver": 136,
-                "gold": 178,
-                "platinum": 202
+                "Red": 108,
+                "White": 112,
+                "Blue": 122,
+                "Silver": 136,
+                "Gold": 178,
+                "Platinum": 202
 
             },
             "LLCorners": {
-                "red": 57,
-                "white": 60,
-                "blue": 65,
-                "silver": 72,
-                "gold": 95,
-                "platinum": 107
+                "Red": 57,
+                "White": 60,
+                "Blue": 65,
+                "Silver": 72,
+                "Gold": 95,
+                "Platinum": 107
 
             },
             "LLEnds": {
-                "red": 35,
-                "white": 37,
-                "blue": 40,
-                "silver": 44,
-                "gold": 58,
-                "platinum": 66
+                "Red": 35,
+                "White": 37,
+                "Blue": 40,
+                "Silver": 44,
+                "Gold": 58,
+                "Platinum": 66
 
             },
             "AcelaLedgeRow1": {
-                "red": 77,
-                "white": 80,
-                "blue": 86,
-                "silver": 97,
-                "gold": 112,
-                "platinum": 142
+                "Red": 77,
+                "White": 80,
+                "Blue": 86,
+                "Silver": 97,
+                "Gold": 112,
+                "Platinum": 142
 
             },
             "AcelaLedgeRow2": {
-                "red": 77,
-                "white": 80,
-                "blue": 86,
-                "silver": 97,
-                "gold": 112,
-                "platinum": 142
+                "Red": 77,
+                "White": 80,
+                "Blue": 86,
+                "Silver": 97,
+                "Gold": 112,
+                "Platinum": 142
 
             },
             "AcelaClubCenter": {
-                "red": 77,
-                "white": 80,
-                "blue": 86,
-                "silver": 97,
-                "gold": 112,
-                "platinum": 142
+                "Red": 77,
+                "White": 80,
+                "Blue": 86,
+                "Silver": 97,
+                "Gold": 112,
+                "Platinum": 142
 
             },
             "AcelaClubBaseline": {
-                "red": 56,
-                "white": 58,
-                "blue": 63,
-                "silver": 71,
-                "gold": 82,
-                "platinum": 104
+                "Red": 56,
+                "White": 58,
+                "Blue": 63,
+                "Silver": 71,
+                "Gold": 82,
+                "Platinum": 104
 
             },
             "AcelaClubCorners": {
-                "red": 36,
-                "white": 37,
-                "blue": 40,
-                "silver": 45,
-                "gold": 52,
-                "platinum": 66
+                "Red": 36,
+                "White": 37,
+                "Blue": 40,
+                "Silver": 45,
+                "Gold": 52,
+                "Platinum": 66
 
             },
             "ULCenter": {
-                "red": 17,
-                "white": 18,
-                "blue": 20,
-                "silver": 21,
-                "gold": 26,
-                "platinum": 28
+                "Red": 17,
+                "White": 18,
+                "Blue": 20,
+                "Silver": 21,
+                "Gold": 26,
+                "Platinum": 28
 
             },
             "ULEndzones": {
-                "red": 17,
-                "white": 18,
-                "blue": 20,
-                "silver": 21,
-                "gold": 26,
-                "platinum": 28
+                "Red": 17,
+                "White": 18,
+                "Blue": 20,
+                "Silver": 21,
+                "Gold": 26,
+                "Platinum": 28
 
             }
         }
