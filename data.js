@@ -414,7 +414,7 @@ var gameData = {
                 "Blue": 41,
                 "Silver": 49,
                 "Gold": 66,
-                "Platinum": 82
+                "Platinum": 92
 
             },
             "AcelaLedgeRow1": {
@@ -454,7 +454,7 @@ var gameData = {
 
             },
             "AcelaClubCorners": {
-                "Red": 36,
+                "Red": 37,
                 "White": 38,
                 "Blue": 42,
                 "Silver": 49,
@@ -579,7 +579,7 @@ var gameData = {
                 "Blue": 40,
                 "Silver": 44,
                 "Gold": 58,
-                "Platinum": 66
+                "Platinum": 71
 
             },
             "AcelaLedgeRow1": {
