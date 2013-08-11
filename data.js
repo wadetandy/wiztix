@@ -187,7 +187,7 @@ var gameData = {
         },
         {
             "opponent": "Bulls",
-            "date": "4/0254",
+            "date": "4/05/2014",
             "gameType": "Gold"
         },
         {
