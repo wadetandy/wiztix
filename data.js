@@ -703,8 +703,8 @@ var gameData = {
             "color": "#F15D2F"
         },
     },
-    
-       "type": {
+
+   "type": {
         "Blue": {
             "color": "#0000FF"
         },
@@ -721,11 +721,9 @@ var gameData = {
             "color": "#FF0000"
         },
         "Gold": {
-            "color": "#FFFF00"
+            "color": "#FFbF00"
         },
-  
- 
-    }
 
+    }
 
 }

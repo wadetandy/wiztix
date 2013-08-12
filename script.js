@@ -11,7 +11,7 @@ function LoadScripts() {
         $('#selections').children().remove();
         $('#totalvalue').text('$0.00');
         $('.gameInfo').each(function(i,elem) {
-          $(elem).css('background-color',"")
+          $(elem).removeClass('success')
           $(elem).data('gameInfo').selectedSeat = null
         })
     });
@@ -22,14 +22,20 @@ function LoadScripts() {
 }
 
 function addToGameList(gameInfo) {
-    var element = $("<tr class='gameInfo'><td>" + gameInfo.opponent + "</td><td>" + gameInfo.date + "</td><td>" + gameInfo.gameType+"</td></tr>")
+    var gameFontColor = ''
+    if (gameData.type[gameInfo.gameType]) {
+      gameFontColor = gameData.type[gameInfo.gameType].color
+    }
+
+    var element = $("<tr class='gameInfo'><td>" + gameInfo.opponent + "</td><td>" + gameInfo.date + "</td><td style='color:" + gameFontColor + ";'>" + gameInfo.gameType+"</td></tr>")
     var gameId = "" + gameInfo.opponent + "_" + gameInfo.gameType + "_" + gameInfo.date.replace(/\//g,'')
     element.attr('id',gameId)
     element.data('gameInfo', gameInfo)
     element.data('gameInfo').gameId = gameId
-    console.log(element.data('gameInfo'))
+
+    // console.log(element.data('gameInfo'))
     $("#gamelist").append(element)
-    element.on("click", displaySeating) 
+    element.on("click", displaySeating)
 }
 
 function displaySeating() {
@@ -60,14 +66,14 @@ function displaySeating() {
               selections.splice(i,1)
             }
           }
-        } 
+        }
 
         selectionData.game.selectedSeat = key.slice(0)
         addToCalculator(selectionData)
       }
     }
-    
-   
+
+
 
     for (var key in gameData.plans[numGames]) {
         var sectionInfo = $("<tr class='sectionInfo'><td>"+key+"</td><td>$" +gameData.plans[numGames][key][gameLevel] + "</td></tr>")
@@ -81,9 +87,6 @@ function displaySeating() {
         sectionInfo.data("price", gameData.plans[numGames][key][gameLevel] )
         if (gameData.sections[key]) {
           sectionInfo.css('background-color', gameData.sections[key].color)
-        }
-        if (gameData.type[key]) {
-          sectionInfo.css('font-color', gameData.type[key].color)
         }
         insertAt.append(sectionInfo)
         sectionInfo.on("click", mkAddToCalcCB(key,sectionInfo.data('price')))
@@ -109,7 +112,7 @@ function rebuildCalculator() {
 
     for (var i = 0; i < selections.length; i++) {
       var selection = selections[i]
-      var entry = $("<li class='selection'>" + 
+      var entry = $("<li class='selection'>" +
                        "<span class='date'>" + selection.data.date + "</span>" +
                        "<span class='desc'>" + selection.data.opponent + "</span>" +
                        "<span class='seat'>" + selection.data.selectedSeat+ "</span>" +
@@ -158,7 +161,7 @@ function addToCalculator(selection) {
   var data = selection.game
   var price = selection.price
 
-  $("#" + selection.game.gameId).css('background-color', 'red')
+  $("#" + selection.game.gameId).addClass('success')
   selections.push({data: selection.game, price: selection.price})
   console.log("Adding to calc: ", selections)
 
