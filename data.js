@@ -679,7 +679,7 @@ var gameData = {
             "color": "#DEEAAA"
         },
         "AcelaClubBaseline": {
-            "color": "#1F3D1C"
+            "color": "#FFFFFF"
         },
         "AcelaClubCorners": {
             "color": "#632243"
