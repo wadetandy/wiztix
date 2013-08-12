@@ -52,6 +52,10 @@ function displaySeating() {
     seatingList.find('td').attr('colspan', 4)
     var insertAt  = seatingList.find("tbody")
 
+    if (gameLevel == "Platinum" && numGames == 5) {
+        alert('You may not select "Platinum" level games as part of a five game plan.');
+        return;
+    }
     var mkAddToCalcCB = function(key, price) {
       return function() {
         var selectionData = {}
@@ -128,7 +132,7 @@ function rebuildCalculator() {
             }
           }
         rebuildCalculator()
-            $("#" + selectionData.gameId).css('background-color',"")
+            $("#" + selectionData.gameId).removeClass('success')
             selectionData.selectedSeat=null
 
         }
