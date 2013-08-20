@@ -27,8 +27,8 @@ function addToGameList(gameInfo) {
       gameFontColor = gameData.type[gameInfo.gameType].color
     }
 
-    var element = $("<tr class='gameInfo'><td>" + gameInfo.opponent + "</td><td>" + gameInfo.date + "</td><td style='color:" + gameFontColor + ";'>" + gameInfo.gameType+"</td></tr>")
-    var gameId = "" + gameInfo.opponent + "_" + gameInfo.gameType + "_" + gameInfo.date.replace(/\//g,'')
+    var element = $("<tr class='gameInfo'><td>" + gameInfo.opponent + "</td><td>" + gameInfo.date + "</td><td style='color:" + gameFontColor + ";'>" + gameInfo.gameType + "</td><td>" + gameInfo.day+"</td></tr>")
+    var gameId = "" + gameInfo.opponent + "_" + gameInfo.gameType + "_" + gameInfo.day + "_" + gameInfo.date.replace(/\//g,'')
     element.attr('id',gameId)
     element.data('gameInfo', gameInfo)
     element.data('gameInfo').gameId = gameId
